@@ -1,0 +1,66 @@
+/* Garante que a imagem não ultrapasse a largura do contêiner */
+img {   
+  height: auto;
+  /* Mantém a proporção da imagem */
+  margin: auto;
+  
+  display: block;
+}
+
+@media screen and (max-width: 450px) {
+  /* Adicione estilos específicos para telas menores que 450px aqui */
+  body {
+      font-size: 14px; /* Exemplo: Reduzindo o tamanho da fonte */
+      text-align: justify;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remover espaço extra abaixo das imagens em alguns casos */
+    margin: 0 auto; /* Centralizar a imagem no contêiner pai */
+    border-radius: 10px; /* Define o raio do canto arredondado */
+    border: 2px solid #000; /* Adiciona uma borda preta de 2px ao redor da imagem */
+}
+}
+
+/* Entre 769px e 1000px */
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  /* Adicione estilos específicos para telas entre 769px e 1000px aqui */
+  body {
+      font-size: 16px; /* Exemplo: Ajustando o tamanho da fonte */
+      text-align: justify;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remover espaço extra abaixo das imagens em alguns casos */
+    margin: 0 auto; /* Centralizar a imagem no contêiner pai */
+    border-radius: 10px; /* Define o raio do canto arredondado */
+    border: 2px solid #000; /* Adiciona uma borda preta de 2px ao redor da imagem */ 
+}
+  
+}
+
+/* Maior que 1000px */
+@media screen and (min-width: 1001px) {
+  /* Adicione estilos específicos para telas maiores que 1000px aqui */
+  body {
+      font-size: 18px; /* Exemplo: Ajustando o tamanho da fonte */
+      text-align: justify;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remover espaço extra abaixo das imagens em alguns casos */
+    margin: 0 auto; /* Centralizar a imagem no contêiner pai */
+    border-radius: 10px; /* Define o raio do canto arredondado */
+    border: 2px solid #000; /* Adiciona uma borda preta de 2px ao redor da imagem */
+}
+
+}
+
+.mensagem-pergunta {
+    display: block; /* Adiciona 'display: block' para que a pergunta seja inicialmente oculta */
+}
+
+ 

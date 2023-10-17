@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="inicio.css">
+    <style>
+        .imagens {
+            display: none;
+            flex-direction: row;
+        }
+        .imagens img {
+            width: 33.33%;
+        }
+        .mensagem-positiva {
+            display: none;
+            font-size: 24px;
+        }
+        .mensagem-negativa {
+            display: none;
+            font-size: 24px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>Calculadora</h1>
+    <p>Informe dois números:</p>
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <button onclick="calcular()">Calcular</button>
+    <p id="resultadoSoma"></p>
+    <p id="resultadoSubtracao"></p>
+    <p id="resultadoMultiplicacao"></p>
+    <p id="resultadoDivisao"></p>
+    <button onclick="redefinir()">Redefinir</button>
+
+    <div class="mensagem-pergunta" style="display: none;">
+    <p>Lembra da promessa né?</p>
+    <button onclick="mostrarImagens()">Sim</button>
+    <button onclick="mostrarMensagem()">Não</button>
+    </div>
+
+        <div class="mensagem-positiva">
+        <div class="imagens">
+            <img src="img.jpeg/img 2.jpeg" alt="Texto alternativo 1">
+            <img src="img.jpeg/img 1.jpeg" alt="Texto alternativo 2">
+            <img src="img.jpeg/img 3.jpeg" alt="Texto alternativo 3">
+        </div>
+        <p>Para sempre 😊</p>
+    </div>
+
+    <div class="mensagem-negativa">
+        Promessa da Igreja, de Cama, dentre outras 🙃
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
