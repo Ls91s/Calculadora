@@ -21,11 +21,6 @@ function calcular() {
     }
 }
 
-function mostrarPergunta() {
-    const mensagemPerguntaDiv = document.querySelector('.mensagem-pergunta');
-    mensagemPerguntaDiv.style.display = 'block';
-}
-
 function mostrarImagens() {
     const mensagemPositivaDiv = document.querySelector('.mensagem-positiva');
     mensagemPositivaDiv.style.display = 'block';
